@@ -16,7 +16,7 @@ docker pull registry.cn-hangzhou.aliyuncs.com/engine/elastic-job-lite-console:la
 ```
 
 ### 启动命令
-clong 本工程
+克隆本工程
 ```text
 cd [本文件]/example
 
