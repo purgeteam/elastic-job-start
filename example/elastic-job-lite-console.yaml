@@ -1,0 +1,12 @@
+version: "2"
+services:
+  elastic-job:
+    image: registry.cn-hangzhou.aliyuncs.com/engine/elastic-job-lite-console:latest
+    container_name: elastic-job-lite-console
+#    volumes:
+#      - ./console-logs/elastic-job-lite-console:/home/elastic-job-lite-console/logs
+    ports:
+      - "8899:8899"
+#    env_file:
+#      - ../env/nacos-ip.env
+    restart: on-failure
