@@ -9,7 +9,26 @@
 
 Elastic-Job console封装为docker版本.
 
+### 下载
 docker images 地址：
-```java
+```text
 docker pull registry.cn-hangzhou.aliyuncs.com/engine/elastic-job-lite-console:latest
+```
+
+### 启动命令
+
+```text
+cd [本文件]/example
+
+docker-compose -f elastic-job-lite-console.yaml up
+```
+
+### 访问
+
+```text
+http://127.0.0.1:8899
+```
+```text
+默认管理密码root/root
+默认访客密码guest/guest
 ```
