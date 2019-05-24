@@ -1,0 +1,53 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: k8s-pv-zk1
+  namespace: elastic-job
+  annotations:
+    volume.beta.kubernetes.io/storage-class: "anything"
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 3Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/var/lib/zookeeper"
+  persistentVolumeReclaimPolicy: Recycle
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: k8s-pv-zk2
+  namespace: elastic-job
+  annotations:
+    volume.beta.kubernetes.io/storage-class: "anything"
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 3Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/var/lib/zookeeper"
+  persistentVolumeReclaimPolicy: Recycle
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: k8s-pv-zk3
+  namespace: elastic-job
+  annotations:
+    volume.beta.kubernetes.io/storage-class: "anything"
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 3Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/var/lib/zookeeper"
+  persistentVolumeReclaimPolicy: Recycle
