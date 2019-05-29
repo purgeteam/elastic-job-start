@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-tcp-ingress-configmap
+  namespace: elastic-job
+data:
+  9000: "elastic-job/elastic-job-lite-console:8899"
