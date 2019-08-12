@@ -22,7 +22,7 @@ spec:
             path: /data/zk-cluster/zk-logs-0
       containers:
         - name: zk-0
-          image: zookeeper
+          image: zookeeper:3.4.14
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - name: zk-data
@@ -73,7 +73,7 @@ spec:
             path: /data/zk-cluster/zk-logs-1
       containers:
         - name: zk-1
-          image: zookeeper
+          image: zookeeper:3.4.14
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - name: zk-data
@@ -124,7 +124,7 @@ spec:
             path: /data/zk-cluster/zk-logs-2
       containers:
         - name: zk-2
-          image: zookeeper
+          image: zookeeper:3.4.14
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - name: zk-data
