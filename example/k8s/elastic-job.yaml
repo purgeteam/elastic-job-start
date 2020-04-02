@@ -19,6 +19,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: elastic-job-lite-console
+  namespace: elastic-job
   labels:
     app: elastic-job-lite-console
 spec:
