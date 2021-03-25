@@ -12,8 +12,14 @@ Elastic-Job console封装为docker版本.
 ### 下载
 docker images 地址：
 ```text
-docker pull registry.cn-hangzhou.aliyuncs.com/engine/elastic-job-lite-console:latest
+docker pull registry.cn-shanghai.aliyuncs.com/purgeteam-jdk/elastic-job-lite-console:3.0.0-RC1
+
+docker pull registry.cn-shanghai.aliyuncs.com/purgeteam-jdk/elastic-job-lite-console:3.0.0.M1-SNAPSHOT
+
 ```
+
+3.0.0-RC1 为 8899端口
+3.0.0.M1-SNAPSHOT 为 8088端口
 
 ### 启动命令
 克隆本工程
@@ -22,15 +28,16 @@ cd [本文件]/example
 
 docker-compose -f elastic-job-lite-console.yaml up
 ```
+
 或者docker run方式
 ```text
-docker run -d --name elastic-job-lite-console -p 8899:8899 registry.cn-hangzhou.aliyuncs.com/engine/elastic-job-lite-console:latest
+docker run -d --name elastic-job-lite-console -p 8088:8088 registry.cn-shanghai.aliyuncs.com/purgeteam-jdk/elastic-job-lite-console:3.0.0.M1-SNAPSHOT
 ```
 
 ### 访问
 
 ```text
-http://127.0.0.1:8899
+http://127.0.0.1:8088
 ```
 ```text
 默认管理密码root/root
