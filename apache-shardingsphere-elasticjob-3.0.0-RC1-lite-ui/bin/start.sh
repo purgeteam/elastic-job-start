@@ -41,7 +41,8 @@ JAVA_OPTS=" -server -Xmx1g -Xms1g -Xmn512m -Xss256k -XX:+DisableExplicitGC -XX:+
 
 MAIN_CLASS=org.apache.shardingsphere.elasticjob.lite.ui.Bootstrap
 echo "Starting the $SERVER_NAME ..."
-
-nohup java ${JAVA_OPTS} -classpath ${CLASS_PATH} ${MAIN_CLASS} > ${STDOUT_FILE} 2>&1 &
+java -version
+#nohup java ${JAVA_OPTS} -classpath ${CLASS_PATH} ${MAIN_CLASS} > ${STDOUT_FILE} 2>&1 &
+nohup java ${JAVA_OPTS} -classpath ${CLASS_PATH} ${MAIN_CLASS} > ${STDOUT_FILE}
 sleep 1
 echo "Please check the STDOUT file: $STDOUT_FILE"
