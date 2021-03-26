@@ -8,7 +8,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 8899
+    - port: 8088
       nodePort: 31000
   selector:
     app: elastic-job-lite-console
@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
         - name: elastic-job-lite-console
-          image: registry.cn-hangzhou.aliyuncs.com/engine/elastic-job-lite-console:latest
+          image: registry.cn-shanghai.aliyuncs.com/purgeteam-jdk/elastic-job-lite-console:3.0.0-RC1
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8899
+            - containerPort: 8088
