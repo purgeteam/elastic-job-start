@@ -1,11 +1,15 @@
 ---
 kind: Deployment
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 metadata:
   name: zk-0
   namespace: elastic-job
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: zk
+      node: node0
   template:
     metadata:
       labels:
